@@ -16,7 +16,10 @@ var makeElement = function(aString, element, parentId, elementId) {
 };
 
 var countUp = function(counter) {
-  makeElement("", "ul", "list-holder", "results")
+  if (firstCount != true) {
+    resetCount();
+    makeElement("", "ul", "list-holder", "results")
+  }
   for (index = 1; index <= counter; index++) {
     if (index % 15 === 0) {
       makeElement("ping-pong", "li", "results");
@@ -35,6 +38,8 @@ var resetCount = function() {
   var oldList = document.getElementById("results");
   oldList.parentNode.removeChild(oldList);
 }
+
+var count
 
 
 
