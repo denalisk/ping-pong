@@ -49,7 +49,7 @@ $(function(){
     event.preventDefault();
     var number = $("#number-input").val();
     if (/[^\d]/.test(number) === true) {
-      $("#error").text("Please input a whole integer, no decimals");
+      $("#error").text("Please input a whole positive integer, no decimals");
     } else {
       $("#error").text("...");
       pingPong(parseInt(number));

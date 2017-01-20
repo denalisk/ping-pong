@@ -9,10 +9,7 @@ ul {
   padding-top: 10px;
   padding-bottom: 50px;
   background: #8cd89f;
-}
-
-.results-container {
-  height: 100%;
+  margin-left: 150px;
 }
 
 .jumbotron {
@@ -22,4 +19,8 @@ ul {
 
 #error {
   height: 25px;
+}
+
+.input-container {
+  margin-left: 150px;
 }
