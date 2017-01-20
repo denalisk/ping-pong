@@ -8,14 +8,15 @@ var numberChecker = function(number) {
   }
 };
 
-var makeElement = function(aString, element, parentId) {
+var makeElement = function(aString, element, parentId, elementId) {
   var newElement = document.createElement(element);
+  newElement.id = elementId;
   newElement.innerHTML = aString;
   document.getElementById(parentId).appendChild(newElement);
 };
 
 var countUp = function(counter) {
-  makeElement("", "ul", "list-holder")
+  makeElement("", "ul", "list-holder", "results")
   for (index = 1; index <= counter; index++) {
     if (index % 15 === 0) {
       makeElement("ping-pong", "li", "results");
