@@ -16,6 +16,7 @@
 * Return "ping" for numbers divisible evenly by 3
 * Return "pong" for numbers divisible evenly by 5
 * Return "ping-pong" for numbers divisible evenly by 15
+* Create a new list element for each returned value
 * Reset the output with new user input
 
 ## Setup
@@ -26,11 +27,10 @@
 ### Technologies Used
 
 * HTML
-* CSS
-* javascript
-* bootstrap
+* CSS with bootstrap
+* javascript with jQuery
 
-[gh-pages link for this project](https://denalisk.github.io/track-guide)
+[gh-pages link for this project](https://denalisk.github.io/ping-pong)
 
 ##### Copyright (c) 2017 Sam Kirsch.
 
