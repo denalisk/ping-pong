@@ -1,3 +1,25 @@
+body {
+  background: #8cd89f;
+  font-family: monospace;
+}
+
 ul {
+  display: none;
   list-style: none;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background: #8cd89f;
+}
+
+.results-container {
+  height: 100%;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  padding-left: 35px;
+}
+
+#error {
+  height: 25px;
 }

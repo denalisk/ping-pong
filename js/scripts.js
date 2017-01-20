@@ -36,14 +36,10 @@ var pingPong = function(number) {
     };
   };
 
-  // this is the meat of the main function
-  if (/[^\d]/.test(number) === true) {
-    return "Please input a whole integer, no decimals";
-  } else {
-    resetCount();
-    countUp(number);
-  };
-}
+  resetCount();
+  countUp(number);
+};
+
 
 
 
@@ -55,7 +51,8 @@ $(function(){
       $("#error").text("Please input a whole integer, no decimals");
     } else {
       $("#error").text("...");
-      pingPong(number);
+      pingPong(parseInt(number));
+      $("ul").show();
     }
   });
 });
