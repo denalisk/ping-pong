@@ -1,3 +1,5 @@
+// START BACKEND
+
 var firstCount = true;
 
 var pingPong = function(number) {
@@ -40,8 +42,7 @@ var pingPong = function(number) {
   countUp(number);
 };
 
-
-
+// START FRONTEND
 
 $(function(){
   $(".count-form").submit(function(event) {
